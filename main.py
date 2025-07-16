@@ -29,6 +29,7 @@ def getFileName(base_name, extension, directory):
 class GraphApp:
     
     def __init__(self, root):
+        # root window
         self.root = root
         self.root.title("Graph Algorithm Visualizer")
 
@@ -94,6 +95,7 @@ class GraphApp:
         try:
             os.makedirs(os.path.dirname(DIJKSTRA_GIF), exist_ok=True)
             writer = PillowWriter(fps=1)
+            # get unique filename
             dijkstra_path  = getFileName("dijkstra", "gif", SAVE_DIR)
             anim.save(dijkstra_path, writer=writer)
             plt.close('all')
@@ -102,12 +104,16 @@ class GraphApp:
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save Dijkstra animation:\n{e}")
 
+    # Prim's Algorithm
     def run_prim(self):
+        
         try:
+            # parse graph
             self.parse_graph()
             start = self.start_node_entry.get().strip()
             if start not in self.graph_adj:
                 raise ValueError("Start node not in graph")
+            # get steps
             steps = prim_steps(self.graph_adj, start)
             pos = nx.spring_layout(self.G, seed=42)
             anim = animate_prim(self.G, steps, pos)
@@ -125,6 +131,7 @@ class GraphApp:
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save Prim animation:\n{e}")
 
+    # add edge dialog
     def add_edge_dialog(self):
         win = tk.Toplevel(self.root)
         win.title("Add Edge")
@@ -141,6 +148,7 @@ class GraphApp:
         w_entry = tk.Entry(win)
         w_entry.grid(row=2, column=1)
 
+        # add edge
         def add():
             try:
                 u = u_entry.get().strip()
@@ -181,6 +189,7 @@ def play_gif(gif_path):
     if not frames:
         return
 
+    # show gif
     label = tk.Label(win)
     label.pack()
 
