@@ -21,3 +21,12 @@ Each algorithm's process is animated and saved as a `.gif` file for better under
   - Incrementally adding edges
 - ✅ Automatically display the animation result in a popup window.
 - ✅ Support for both binary heap and linked list fringe implementations.
+
+---
+
+## 🎬 Sample Output
+
+| Dijkstra | Prim |
+|----------|------|
+| ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim.gif) |
+
