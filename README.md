@@ -8,6 +8,21 @@ This project is a visual interactive tool built with Python and Tkinter to demon
 Each algorithm's process is animated and saved as a `.gif` file for better understanding and step-by-step visualization.
 
 ---
+Install dependencies (if using virtual environment):
+
+pip install -r requirements.txt
+
+---
+Run the application:
+
+python main.py
+
+> 📁 **Note:** By default, all generated animation `.gif` files will be saved to:
+>
+> `Dijkatra&Prim/animation/`
+>
+> You can modify the path by changing the `SAVE_DIR` variable at the top of `main.py`.
+
 
 ## 🧠 Features
 
