@@ -1,0 +1,28 @@
+# 忽略 push 脚本
+push.sh
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# 虚拟环境
+env/
+venv/
+ENV/
+.venv/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# VSCode 配置
+.vscode/
+
+# 动画输出目录（如果是你保存 GIF 的路径）
+/animation/
