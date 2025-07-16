@@ -48,11 +48,19 @@ C D 2
 
 | Dijkstra | Prim |
 |----------|------|
-| ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim1.gif) |
+| ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim.gif) |
 
 
 And add  the edge:
 
 B E 6
+
+## 🎬 Sample Output
+
+| Dijkstra | Prim |
+|----------|------|
+| ![Dijkstra](animation/dijkstra1.gif) | ![Prim](animation/prim1.gif) |
+
+
 
 
