@@ -24,24 +24,35 @@ Each algorithm's process is animated and saved as a `.gif` file for better under
 
 ---
 Enter the graph edges in the format:
+
 Start node:A
+
 A B 1
+
 A C 2
+
 B D 6
+
 C E 5
+
 D F 1
+
 E F 4
+
 A F 3
+
 C D 2
 
 ---
-And add  the edge:
-B E 6
-
-
 ## 🎬 Sample Output
 
 | Dijkstra | Prim |
 |----------|------|
 | ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim1.gif) |
+
+
+And add  the edge:
+
+B E 6
+
 
