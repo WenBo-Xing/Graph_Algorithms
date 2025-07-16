@@ -28,5 +28,5 @@ Each algorithm's process is animated and saved as a `.gif` file for better under
 
 | Dijkstra | Prim |
 |----------|------|
-| ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim.gif) |
+| ![Dijkstra](animation/dijkstra.gif) | ![Prim](animation/prim1.gif) |
 
