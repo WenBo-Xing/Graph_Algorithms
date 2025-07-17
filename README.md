@@ -59,6 +59,8 @@ A F 3
 C D 2
 
 ---
+![ ](result/mainwindow.png)
+
 ## 🎬 Sample Output
 
 | Dijkstra | Prim |
@@ -69,6 +71,8 @@ C D 2
 And add  the edge:
 
 B E 6
+
+|![Add edge](result/add_adge.png)|![ ](result/mainAddedge.png)|
 
 ## 🎬 Sample Output
 
